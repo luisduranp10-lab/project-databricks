@@ -1,7 +1,6 @@
 # project-databricks
 Proyecto de Azure Databricks Smart Data 2025
 
----
 
 ## 🚀 Arquitectura del ETL
 
@@ -90,7 +89,9 @@ Cada archivo representa una etapa del ETL:
 2. **Transformación**  
 3. **Unión de datasets**  
 4. **Carga a capa Golden**  
-5. **Orquestación del flujo**  
+
+Estos pueden ser invocados de manera secuencial mediante 
+**Orquestación del flujo**  
 
 ---
 
@@ -108,12 +109,6 @@ El dashboard final debe consumir la tabla:
 ---
 
 ## 🧾 Evidencias – /certificaciones/
-Incluye:
-
-- Capturas de ejecución de notebooks
-- Evidencia gráfica del pipeline
-- PDFs de resultados
-- Informes técnicos
 
 ---
 
@@ -134,12 +129,15 @@ Flujos propuestos:
    - Crear catálogo, schemas, external locations y tablas base.
 
 2. **Ejecutar los notebooks del ETL desde `/proceso`**  
-   en orden:
+
+	Se ejecuta Orquestador.py
+
+   Este Orquesadoor ejecuta en el siguiente orden:
+   
    1) Ingest_ubigeo.py  
    2) Ingest_health_centers.py  
    3) Transform.py  
    4) Load.py  
-   5) Orquestador.py
 
 3. **Validar output en tabla Golden**  
    - `catalog_dev.golden.golden_health_centers_peru`
