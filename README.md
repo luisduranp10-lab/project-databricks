@@ -91,7 +91,7 @@ Cada archivo representa una etapa del ETL:
 	- Load.py
 
 Estos pueden ser invocados de manera secuencial mediante 
-**Orquestación del flujo** mediante `Orquestador.py`
+**Orquestación del flujo** desde `Orquestador.py`
 
 ---
 
