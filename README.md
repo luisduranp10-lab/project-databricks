@@ -96,14 +96,10 @@ Estos pueden ser invocados de manera secuencial mediante
 ---
 
 ## 📊 Dashboards – /dashboard/
-Aquí se almacenan:
 
-- Archivos `.json` exportados desde Power BI
-- Imágenes `.png` de dashboards
-- Reportes `.pbix`
-- Enlaces guardados en `.txt`
+- Reporte: Centros_salud_Peru.pbix
 
-El dashboard final debe consumir la tabla:  
+El dashboard final debe consume la tabla:  
 `golden.golden_health_centers_peru`.
 
 ---
