@@ -5,6 +5,7 @@ Información en base a los datasets de la Plataforma Nacional de Datos Abiertos 
 
 `hospitalesopendata.csv`
 https://www.datosabiertos.gob.pe/dataset/directorio-de-establecimientos-de-salud?utm_source=chatgpt.com
+
 `ubigeo.csv`
 https://www.datosabiertos.gob.pe/dataset/ubigeos-c%C3%B3digos-de-ubicaci%C3%B3n-geogr%C3%A1fica-instituto-nacional-de-estad%C3%ADstica-e-inform%C3%A1tica-inei?utm_source=chatgpt.com
 
