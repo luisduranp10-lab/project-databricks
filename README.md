@@ -44,18 +44,6 @@ Estos scripts deben ejecutarse antes de correr cualquier notebook ETL.
 ---
 
 ## 🔐 Seguridad – /seguridad/
-Incluye los archivos SQL para otorgar permisos:
-
-- GRANTS sobre catálogo
-- GRANTS sobre schemas
-- GRANTS sobre external locations
-- GRANTS sobre tablas
-
-Estos permisos están diseñados para roles como:
-
-- `DataEngineers`
-- `Analysts`
-- `BI_Team`
 
 ---
 
@@ -86,20 +74,24 @@ Incluye los notebooks convertidos a `.py`:
 Cada archivo representa una etapa del ETL:
 
 1. **Ingestión cruda**  
-2. **Transformación**  
+	- Ingest_ubigeo.py
+	- Ingest_health_centers.py
+2. **Transformación** 
 3. **Unión de datasets**  
-4. **Carga a capa Golden**  
+	- Transform.py
+4. **Carga a capa Golden** 
+	- Load.py
 
 Estos pueden ser invocados de manera secuencial mediante 
-**Orquestación del flujo**  
+**Orquestación del flujo** mediante `Orquestador.py`
 
 ---
 
 ## 📊 Dashboards – /dashboard/
 
-- Reporte: Centros_salud_Peru.pbix
+- Reporte en PowerBI: Centros_salud_Peru.pbix
 
-El dashboard final debe consume la tabla:  
+El dashboard final consume la tabla:  
 `golden.golden_health_centers_peru`.
 
 ---
