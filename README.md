@@ -128,7 +128,7 @@ Flujos propuestos:
 
 	Se ejecuta Orquestador.py
 
-   Este Orquesadoor ejecuta en el siguiente orden:
+   Este Orquestador ejecuta los notebooks en el siguiente orden:
    
    1) Ingest_ubigeo.py  
    2) Ingest_health_centers.py  
